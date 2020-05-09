@@ -43,7 +43,28 @@ Another parts [part A](part2.md) [part B](part3.md)
  ```
  
  ## Hash: 1st indentify which hash, then break given hash
+ ### How can I identify hash type
  
- 
+ - There is no concrete method for identifying a hash algorithm using the hash alone.
+
+ - Some hashes have signatures which give a strong indication of which algorithm was used, such as “$1$” for md5crypt. Usually you can rely on this information; however, this method of identification is not bullet-proof! For example, consider an algorithm such as crypt(sha256(pass), “$1$”).
+
+- For hashes which have no signature, it is virtually impossible to distinguish which algorithm was used. A string of 32 hex characters could be LM, NTLM, MD4, MD5, double MD5, triple md5, md5(sha512(pass)), so on and so forth. There is literally an infinite number of possibilities for what the algorithm may be!
+
+- Tools which claim to be able to identify hashes simply use regular expressions to match the hash against common patterns. This method is extremely unreliable and often yields incorrect results. It is best to avoid using such tools.
+
+- A much better way to identify the hash algorithm would be to understand the origin of the hashes (e.g. operating system, COTS application, web application, etc.) and make an educated guess at what the hash algorithm might be. Or better yet, use the source!
+
+- For some example hashes see the [example hashes](https://hashcat.net/wiki/doku.php?id=example_hashes) wiki page.
+
+### Breaking the hash
+[hashcat wiki](https://hashcat.net/wiki/doku.php?id=hashcat)
+```
+hashcat -m [hash type] -a [attack mode] [hash itself] --force
+```
+- Example breaking md5 of `hello` with brute-force
+```
+hashcat -m 0 -a 3 5d41402abc4b2a76b9719d911017c592 --force
+```
  ## msfconsole: setup everything and run exploit
  
