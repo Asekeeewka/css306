@@ -25,3 +25,9 @@ Another parts [part B](part3.md) [part C](part4.md)
 kali@kali:~$ python hulk.py https://sdu.edu.kz
 ```
 ## Wireshark: show any packet and analyze it
+ ```
+ kali@kali:~$ wireshark
+ ```
+ 1. Select `eth0` interface
+ 2. Press blue capture button
+ 3. Analyze any packet
