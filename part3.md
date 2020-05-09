@@ -44,7 +44,7 @@ Another parts [part A](part2.md) [part C](part4.md)
  ```
  4. Run bWAPP 
  ```
- sudo service mysql
+ sudo service mysql start
  ``` 
  ```
  sudo service apache2 start
