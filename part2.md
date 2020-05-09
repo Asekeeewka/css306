@@ -1,4 +1,5 @@
 # A part questions(7 points)
+Another parts [part B](part3.md) [part C](part4.md)
  ## Find email addresses which belong to some organization
  ### Solution 1
  ```
