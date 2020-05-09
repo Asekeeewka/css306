@@ -29,6 +29,47 @@ Another parts [part A](part2.md) [part C](part4.md)
  11. Fill other parts and press `Send test email`
  
  
- ## Apache + modsecurity
+ ## Apache + modsecurity(bWAPP)
+ 1. Open sites-available folder(might be different for you)
+ ```
+ kali@kali:-$ cd /etc/apache2/sites-available
+ ```
+ 2. Open `000-default.conf` file
+ ```
+ kali@kali:/etc/apache2/sites-available$ nano 000-default.conf
+ ```
+ 3. Add `SecRuleEngine On` and (Optional step)
+ ```
+ SecRule ARGS:movie "@contains union" "id:1234,deny,status:403,msg:'Our test rule has triggered'"
+ ```
+ 4. Run bWAPP 
+ ```
+ sudo service mysql
+ ``` 
+ ```
+ sudo service apache2 start
+ ```
+ 5. Try using exploit 
+ ```
+ localhost/bWAPP/sqli_2.php?movie=-1+union+select+1,login,password,secret,email,6,7+from+bWAPP.users+order%20by%204+desc+&action=go
+ ```
  
- 
+ ## Honeypot (ssh + wordpress)
+ ### Honeypot ssh
+ 1. Start Honeypot
+ ```
+ python honeypot.py
+ ```
+ 2. connect via ssh (default port 2222)
+ ```
+ ssh [your ip] -p 2222
+ ```
+ ### Honeypot wordpress
+ 1. start honeypot
+ ```
+ python wordpot.py
+ ```
+ 2. connect via browser(default port 80)
+ ```
+ 127.0.0.1:80
+ ```
