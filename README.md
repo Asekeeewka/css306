@@ -4,3 +4,6 @@
 
 ## Lectures
 Lectures links can be found here - <a href="https://github.com/Asekeeewka/css306/blob/master/lectures.txt" target="_blank">lectures.txt</a>
+
+## Part A question answers
+[Right here](part2.md)
