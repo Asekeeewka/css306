@@ -16,4 +16,12 @@
 1. Go to [Exploit database](https://exploit-db.com/google-hacking-database?)
 2. Press Filters button (it's orange)
 3. Select `Pages Containing Login Portals` in `Category` drop down menu
-4. Run any exploit (no matter if it works)
+4. Run any exploit (no matter if it works) 
+ 
+ 
+## Perform DOS attack on sdu.edu.kz
+```
+kali@kali:~$ python hulk.py https://sdu.edu.kz
+```
+ 
+## Wireshark: show any packet and analyze it
