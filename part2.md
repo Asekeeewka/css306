@@ -23,5 +23,4 @@
 ```
 kali@kali:~$ python hulk.py https://sdu.edu.kz
 ```
- 
 ## Wireshark: show any packet and analyze it
