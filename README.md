@@ -7,3 +7,9 @@ Lectures links can be found here - <a href="https://github.com/Asekeeewka/css306
 
 ## Part A question answers
 [Right here](part2.md)
+
+## Part B question answers
+[Right here](part3.md)
+
+## Part C question answers
+[Right here](part4.md)
