@@ -9,7 +9,11 @@
  kali@kali:~$ theHarvester -d sdu.edu.kz -b all -l 200
  ```
  ### Solution 2
- `Go to` [hunter.io](https://hunter.io) `and search`
+ Go to [hunter.io](https://hunter.io) and search
  
  
-## assdf
+## Show how to find google dork for "pages containing login"
+1. Go to [Exploit database](https://exploit-db.com/google-hacking-database?)
+2. Press Filters button (it's orange)
+3. Select `Pages Containing Login Portals` in `Category` drop down menu
+4. Run any exploit (no matter if it works)
