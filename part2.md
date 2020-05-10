@@ -25,9 +25,14 @@ Another parts [part B](part3.md) [part C](part4.md)
 kali@kali:~$ python hulk.py https://sdu.edu.kz
 ```
 ## Wireshark: show any packet and analyze it
+### Statement
+An authenticated file exchange achieved through FTP. Recover the password used by the user
+### Solution
+1. Download file from [root-me](https://www.root-me.org/en/Challenges/Network/FTP-authentication)
+2. Run `wireshark`
  ```
  kali@kali:~$ sudo wireshark
  ```
- 1. Select `eth0` interface
- 2. Press blue capture button
- 3. Analyze any packet
+3. Open `ch1.pcap` file
+4. **Right-click** any packet go to Follow - TCP Stream (Ctrl+Alt+Shift+T)
+5. show answer `USER cdts3500` and `PASS cdts3500`
