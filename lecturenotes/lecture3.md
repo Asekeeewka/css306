@@ -1,0 +1,22 @@
+## Most common cyberattacks
+- Denial of Service (DOS) 
+- Man in the middle (MitM) - hacker inserts itself between communcaions of a client and a server
+- Sniffing - capture traffic and read
+- Phishing 
+- Password Attack 
+- SQL injection
+- XSS
+- Malware 
+- Social Engineering
+- Smurfs attack - (ddos icmp)
+- UDP Storm - (ddos udp)
+- UPD Bomb - Attacker sends a UDP packet with incorrect service data fields to the UDP system.
+- Zero-day exploit
+- Drive-by attack - sites are injected with harmful script to download/execute smth bad
+- Eavesdropping attack - passive/active(probing,scanning,tampering)
+- Birthday attack - hashes
+- IP Hijacking - 
+- IP Spoofing - The attacker replaces his real IP with a fictitious one.
+- Viruses
+- Trojan horse
+- Computer worm
