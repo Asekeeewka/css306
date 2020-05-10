@@ -11,13 +11,13 @@ cache data.
 - SOCKS Host to 127.0.0.1:9050
 
 ## Tools:
-- GL iNet                           - Convert a public network(wired/wireless) to a private Wi-Fi for
+- GL iNet                           -> Convert a public network(wired/wireless) to a private Wi-Fi for
 secure surfing.
-- snusbase.com                      - leak base
-- getcontact, numbuster             - find number
-- hunter.io                         - find email
-- Maltego, theHarvester, SpiderFoot - information harvesting
-- xho.ru                            - mobile number substitution
-- SET(Social Engineering Toolkit)   - сами знаете
-- INFOSMS                           - send sms
-- GoPhish                           - email phishing
+- snusbase.com                      -> leak base
+- getcontact, numbuster             -> find number
+- hunter.io                         -> find email
+- Maltego, theHarvester, SpiderFoot -> information harvesting
+- xho.ru                            -> mobile number substitution
+- SET(Social Engineering Toolkit)   -> сами знаете
+- INFOSMS                           -> send sms
+- GoPhish                           -> email phishing
