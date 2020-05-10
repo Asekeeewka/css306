@@ -44,7 +44,33 @@ Another parts [part A](part2.md) [part B](part3.md)
  
  ## Hash: 1st indentify which hash, then break given hash
  ### How can I identify hash type
- 
+ ```
+ hashid [hash]
+ ```
+ it will give answers like
+ ```
+kali@kali:~$ hashid 7815696ECBF1C96E6894B779456D330E
+Analyzing '7815696ECBF1C96E6894B779456D330E'
+[+] MD2 
+[+] MD5 
+[+] MD4 
+[+] Double MD5 
+[+] LM 
+[+] RIPEMD-128 
+[+] Haval-128 
+[+] Tiger-128 
+[+] Skein-256(128) 
+[+] Skein-512(128) 
+[+] Lotus Notes/Domino 5 
+[+] Skype 
+[+] Snefru-128 
+[+] NTLM 
+[+] Domain Cached Credentials 
+[+] Domain Cached Credentials 2 
+[+] DNSSEC(NSEC3) 
+[+] RAdmin v2.x 
+
+ ```
  - There is no concrete method for identifying a hash algorithm using the hash alone.
 
  - Some hashes have signatures which give a strong indication of which algorithm was used, such as “$1$” for md5crypt. Usually you can rely on this information; however, this method of identification is not bullet-proof! For example, consider an algorithm such as crypt(sha256(pass), “$1$”).
