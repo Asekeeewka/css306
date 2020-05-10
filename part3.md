@@ -38,7 +38,7 @@ Another parts [part A](part2.md) [part C](part4.md)
  ```
  kali@kali:/etc/apache2/sites-available$ nano 000-default.conf
  ```
- 3. Add `SecRuleEngine On` and (Optional step)
+ 3. Add `SecRuleEngine On` and (Code below might be Optional)
  ```
  SecRule ARGS:movie "@contains union" "id:1234,deny,status:403,msg:'Our test rule has triggered'"
  ```
