@@ -7,17 +7,17 @@
 cache data.
 - You can’t simply delete supercookies. You only opt-out if your ISP allows you to.
 
-### Tor - The Onion Router
+## Tor - The Onion Router
 - SOCKS Host to 127.0.0.1:9050
 
-Tools:
-- GL iNet -> Convert a public network(wired/wireless) to a private Wi-Fi for
+## Tools:
+- GL iNet                           - Convert a public network(wired/wireless) to a private Wi-Fi for
 secure surfing.
-- snusbase.com - leak base
-- getcontact, numbuster - find number
-- hunter.io - find email
+- snusbase.com                      - leak base
+- getcontact, numbuster             - find number
+- hunter.io                         - find email
 - Maltego, theHarvester, SpiderFoot - information harvesting
-- xho.ru - mobile number substitution
-- SET(Social Engineering Toolkit) - сами знаете
-- INFOSMS - send sms
-- GoPhish - email phishing
+- xho.ru                            - mobile number substitution
+- SET(Social Engineering Toolkit)   - сами знаете
+- INFOSMS                           - send sms
+- GoPhish                           - email phishing
