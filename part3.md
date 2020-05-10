@@ -25,7 +25,7 @@ Another parts [part A](part2.md) [part C](part4.md)
  7. Create API key
  8. Go to [Sending profiles in gophish](https://127.0.0.1:3333/sending_profiles)
  9. Press new profile
- 10. Fill `Host = smtp.sendgrid.net` and `username = "your api key name"` and `password = "your api key"`
+ 10. Fill `Host = smtp.sendgrid.net` and `username = apikey` and `password = "your api key"`
  11. Fill other parts and press `Send test email`
  
  
