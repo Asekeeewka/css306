@@ -1,6 +1,6 @@
 # B part questions(10 points)
 Another parts [part A](part2.md) [part C](part4.md)
- ## TOR browser: show you ip before and after using it
+ ## TOR browser: show your ip before and after using it
  ### Solution 1
  ```
  kali@kali:~$ curl 2ip.ru
